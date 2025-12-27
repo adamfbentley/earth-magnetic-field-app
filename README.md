@@ -1,10 +1,14 @@
-# Earth's Magnetic Field modelling Application
+# Earth's Magnetic Field Modeling Application
 
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![PyQt6](https://img.shields.io/badge/PyQt6-6.0+-green.svg)](https://www.riverbankcomputing.com/software/pyqt/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/status-portfolio%2Fdemo-blue.svg)](https://github.com/adamfbentley/earth-magnetic-field-app)
 
-A professional desktop application for geophysical data analysis featuring **spherical harmonic analysis** of Earth's magnetic field. Built with PyQt6, this application provides real-time sensor integration, interactive 3D visualisations, and automated PDF reporting for research and educational purposes.
+A desktop application demonstrating **spherical harmonic analysis** of Earth's magnetic field using professional software architecture. Built with PyQt6, featuring interactive 3D visualizations, real-time data acquisition patterns, and automated PDF reporting.
+
+> **Project Status:** Architecture Demonstration / Portfolio Project  
+> This showcases software engineering skills for scientific computing. Core mathematical implementation is complete and correct. Testing and validation are minimal.
 
 ## 🌍 Overview
 
@@ -43,10 +47,10 @@ This application allows geophysicists, researchers, and students to:
 - **Model Validation Metrics**: RMSE, correlation coefficients, residual plots
 
 ### Professional Architecture
-- **Modular Design**: 15+ separate modules with clean separation of concerns
+- **Modular Design**: 17 separate modules with clean separation of concerns
 - **PyQt6 GUI**: Modern desktop interface with tabbed navigation
-- **Comprehensive Testing**: pytest test suite with >80% coverage
-- **Sphinx Documentation**: Full API reference and user guide
+- **Testing Framework**: Architecture supports pytest (basic tests included)
+- **API Documentation**: Comprehensive docstrings throughout codebase
 
 ## 🚀 Quick Start
 
@@ -207,36 +211,38 @@ earth-magnetic-field-app/
 
 ## 🧪 Testing
 
-Run the test suite:
+Basic test suite included:
 
 ```bash
-# All tests
+# Run tests
 pytest
 
-# With coverage report
-pytest --cov=src --cov-report=html
-
-# Specific test modules
-pytest tests/test_spherical_harmonics.py -v
-
-# GUI tests (requires display)
-pytest tests/test_gui.py --qt-api=pyqt6
+# Run with verbose output
+pytest -v tests/test_spherical_harmonics.py
 ```
+
+> **Note:** Test coverage is minimal. This demonstrates architecture and mathematical correctness rather than production-level validation.
 
 ## 📊 Sample Data
 
-Included sample datasets in `data/`:
-- `igrf13_coefficients.csv`: International Geomagnetic Reference Field (IGRF-13) model
-- `sample_measurements.csv`: Synthetic magnetometer readings
-- `observatory_data.xlsx`: Historical observatory measurements
+Generate sample data for testing:
+
+```bash
+python generate_sample_data.py
+```
+
+This creates synthetic magnetic field measurements for demonstration purposes.
 
 ## 🎓 Educational Use
 
-This application is suitable for:
-- **University Courses**: Geophysics, Applied Mathematics, Computational Physics
-- **Research Projects**: Magnetic field modelling, sensor calibration
-- **Student Labs**: Hands-on learning of spherical harmonics and data analysis
-- **Science Communication**: Interactive demonstrations of Earth's magnetic field
+This application demonstrates:
+- **Software Architecture**: Modular design for scientific applications
+- **Scientific Computing**: Spherical harmonics, least-squares fitting
+- **GUI Development**: PyQt6 with real-time data processing
+- **Data Visualization**: Interactive 3D plots with Plotly
+- **Hardware Integration**: Serial communication patterns
+
+Suitable for portfolio demonstrations and teaching software engineering principles in scientific contexts.
 
 ## 🤝 Contributing
 
