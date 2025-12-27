@@ -5,19 +5,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status](https://img.shields.io/badge/status-portfolio%2Fdemo-blue.svg)](https://github.com/adamfbentley/earth-magnetic-field-app)
 
-A desktop application demonstrating **spherical harmonic analysis** of Earth's magnetic field using professional software architecture. Built with PyQt6, featuring interactive 3D visualizations, real-time data acquisition patterns, and automated PDF reporting.
+Desktop application for **spherical harmonic analysis** of Earth's magnetic field. Built with PyQt6, featuring 3D visualizations, real-time magnetometer data acquisition, and PDF reporting.
 
-> **Project Status:** Architecture Demonstration / Portfolio Project  
-> This showcases software engineering skills for scientific computing. Core mathematical implementation is complete and correct. Testing and validation are minimal.
+> **Note:** This is a portfolio/demo project showing software architecture for scientific applications. The math is solid but testing is minimal.
 
 ## 🌍 Overview
 
-This application allows geophysicists, researchers, and students to:
-- Model Earth's magnetic field using spherical harmonic expansion
-- Acquire and process real-time magnetometer data
-- Visualize magnetic field vectors, declination, and intensity in 3D
-- Generate comprehensive PDF reports with analysis results
-- Validate models against measured data
+Model Earth's magnetic field with spherical harmonics:
+- Load magnetometer data from CSV/Excel files
+- Fit spherical harmonic coefficients (up to degree 13)
+- Visualize field vectors, declination, and intensity in 3D
+- Generate PDF reports with analysis results
+- Optional: connect to real magnetometer hardware via serial
 
 ## ✨ Key Features
 
@@ -46,11 +45,11 @@ This application allows geophysicists, researchers, and students to:
 - **Gauss Coefficients**: Complete spherical harmonic coefficient listings
 - **Model Validation Metrics**: RMSE, correlation coefficients, residual plots
 
-### Professional Architecture
-- **Modular Design**: 17 separate modules with clean separation of concerns
-- **PyQt6 GUI**: Modern desktop interface with tabbed navigation
-- **Testing Framework**: Architecture supports pytest (basic tests included)
-- **API Documentation**: Comprehensive docstrings throughout codebase
+### Architecture
+- **Modular Design**: 17 modules with clean separation of concerns
+- **PyQt6 GUI**: Desktop interface with tabs for data, analysis, and visualization
+- **Testing**: Basic pytest suite included
+- **Documentation**: Full docstrings in code
 
 ## 🚀 Quick Start
 
@@ -233,16 +232,15 @@ python generate_sample_data.py
 
 This creates synthetic magnetic field measurements for demonstration purposes.
 
-## 🎓 Educational Use
+## 🎓 Use Cases
 
-This application demonstrates:
-- **Software Architecture**: Modular design for scientific applications
-- **Scientific Computing**: Spherical harmonics, least-squares fitting
-- **GUI Development**: PyQt6 with real-time data processing
-- **Data Visualization**: Interactive 3D plots with Plotly
-- **Hardware Integration**: Serial communication patterns
+Good for:
+- Learning spherical harmonic analysis
+- Portfolio demonstration of scientific software
+- Teaching PyQt6 GUI development
+- Prototyping geomagnetic analysis workflows
 
-Suitable for portfolio demonstrations and teaching software engineering principles in scientific contexts.
+Not intended for production geophysical research.
 
 ## 🤝 Contributing
 
